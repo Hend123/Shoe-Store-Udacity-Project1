@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ShoeStoreUdacityProject1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="CustomText">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomText.Small" parent="CustomText">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="CustomText.Regular" parent="CustomText">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="CustomText.ExtraLarge" parent="CustomText">
+        <item name="android:textSize">@dimen/text_size_32</item>
+    </style>
+
+    <style name="TextInputHint">
+        <item name="android:backgroundTint">@color/text_white</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textColorHint">@color/text_color_hint</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AppTheme.Button.Accent" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Button.Accent.Dark" parent="AppTheme.Button.Accent">
+        <item name="colorButtonNormal">@color/colorAccentDark</item>
+    </style>
+
+    <style name="AppTheme.Button.Accent.Light" parent="AppTheme.Button.Accent">
+        <item name="colorButtonNormal">@color/colorAccentLight</item>
+    </style>
+
+    <style name="AppTheme.Button.Large" parent="AppTheme.Button.Accent">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="AppTheme.Button.SaveGreen" parent="AppTheme.Button.Large">
+        <item name="colorButtonNormal">@color/save_green</item>
+    </style>
+</resources>

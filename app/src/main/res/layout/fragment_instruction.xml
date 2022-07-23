@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+  >
+
+    <data>
+
+    </data>
+
+    <!-- Simple layout was suitable for ConstraintLayout
+         No need to add extra complexity w/ LinearLayout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/how_to_logo"
+            android:layout_width="@dimen/how_to_logo_size"
+            android:layout_height="@dimen/how_to_logo_size"
+            android:layout_marginTop="@dimen/padding_48"
+            android:src="@drawable/user_guide_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/CustomText.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_32"
+            android:text="@string/instructions_on_how_to_use"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/how_to_logo"
+            />
+
+        <TextView
+            android:id="@+id/subtitle_text"
+            style="@style/CustomText.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding_48"
+            android:layout_marginTop="@dimen/padding_12"
+            android:text="@string/demo_text"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_text"
+/>
+        <Button
+            android:id="@+id/btn_nav_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_32"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:text="@string/finish"
+            android:theme="@style/AppTheme.Button.Accent.Dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/subtitle_text"
+            tools:text="Finish" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

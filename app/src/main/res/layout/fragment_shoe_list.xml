@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+    </data>
+
+    <!-- Here we use RelativeLayout for ease of developing.
+         It allows us to nicely align FAB, toolbar, emptyList View
+         and the scrollView w/ Linear Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar_logout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:menu="@menu/menu"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:background="@color/colorPrimaryLight"-->
+<!--            android:minHeight="?attr/actionBarSize"-->
+<!--            app:titleTextColor="@color/text_white" />-->
+
+        <!-- Start of empty list view -->
+        <!-- We add an image w/ subtitle to denote empty view
+             and provide a better UX -->
+        <ImageView
+            android:id="@+id/empty_view_image"
+            android:layout_width="@dimen/image_empty_size"
+            android:layout_height="@dimen/image_empty_size"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/empty_view_image"
+            android:src="@drawable/empty_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/empty_view_text"
+            style="@style/CustomText.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty_view_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding_12"
+            android:text="@string/such_empty"
+            android:visibility="gone" />
+        <!-- End of empty list view -->
+
+        <ScrollView
+            android:id="@+id/shoe_list_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <LinearLayout
+                android:id="@+id/shoe_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_nav_shoe_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/padding_32"
+            android:src="@drawable/ic_add"
+            android:tint="@color/colorPrimary"
+            android:contentDescription="@string/add_floating_action" />
+
+    </RelativeLayout>
+
+</layout>

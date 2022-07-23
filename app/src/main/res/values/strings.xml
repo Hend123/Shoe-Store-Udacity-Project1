@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Shoe Store Udacity Project1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="such_empty">Wow, such empty</string>
+    <string name="empty_view_image">EmptyViewImage</string>
+    <string name="shoe_list">Shoe List</string>
+    <string name="add_shoe">Add Shoe</string>
+    <string name="email_label">Email</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="next">Next</string>
+    <string name="instructions_on_how_to_use">Instructions on how to use...</string>
+    <string name="demo_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="finish">Finish</string>
+    <string name="name">Name</string>
+    <string name="enter_name_of_the_shoes">Enter name of the shoes</string>
+    <string name="company">Company</string>
+    <string name="enter_shoe_s_company_name">Enter Shoe\'s company name</string>
+    <string name="size">Size</string>
+    <string name="decimal_size">Decimal size</string>
+    <string name="description">Description</string>
+    <string name="enter_a_short_description">Enter a short description</string>
+    <string name="save">Save</string>
+    <string name="add_floating_action">add floating action</string>
+    <string name="welcome_to_shoe_shack">Welcome to Shoe Shack</string>
+    <string name="log_out">Log out</string>
+    <string name="cancel">cancel</string>
+</resources>
