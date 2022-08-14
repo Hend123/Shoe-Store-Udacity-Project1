@@ -38,6 +38,7 @@ class ShoeListFragment : Fragment() {
         }
         return binding.root
     }
+    //اثممخ
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val menuHost: MenuHost = requireActivity()
